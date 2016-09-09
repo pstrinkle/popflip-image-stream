@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/dnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Disply Name: " />
+
+    <EditText
+        android:id="@+id/dnValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dnLabel"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/dnUpdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dnValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/dnLabel"
+        android:layout_below="@+id/dnLabel"
+        android:onClick="updateFieldDn"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/snLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dnUpdate"
+        android:text="Screen Name: " />
+
+    <EditText
+        android:id="@+id/snValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dnValue"
+        android:layout_below="@+id/dnValue"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/snUpdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/snValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/dnUpdate"
+        android:layout_below="@+id/snLabel"
+        android:onClick="updateFieldSn"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/rnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/snUpdate"
+        android:text="Real Name: " />
+
+    <EditText
+        android:id="@+id/rnValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/snValue"
+        android:layout_below="@+id/snValue"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/rnUpdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rnValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/snUpdate"
+        android:layout_below="@+id/rnLabel"
+        android:onClick="updateFieldRn"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/eMailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rnUpdate"
+        android:text="E-Mail: " />
+
+    <EditText
+        android:id="@+id/eMailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnValue"
+        android:layout_alignRight="@+id/rnValue"
+        android:layout_below="@+id/rnValue"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+    </EditText>
+
+    <Button
+        android:id="@+id/eMailUpdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eMailValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/rnUpdate"
+        android:layout_below="@+id/eMailLabel"
+        android:onClick="updateFieldEMail"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/webHomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eMailUpdate"
+        android:text="Web Home: " />
+
+    <EditText
+        android:id="@+id/webHomeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eMailValue"
+        android:layout_alignRight="@+id/eMailValue"
+        android:layout_alignTop="@+id/webHomeLabel"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/webHomeUpdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/webHomeValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/eMailUpdate"
+        android:layout_below="@+id/webHomeLabel"
+        android:onClick="updateFieldWebHome"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/watchListButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/webHomeUpdate"
+        android:onClick="startWatchListView"
+        android:text="Watch List" />
+
+    <Button
+        android:id="@+id/communitiesButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/watchListButton"
+        android:layout_toRightOf="@+id/rnLabel"
+        android:onClick="startCommunitiesView"
+        android:text="Communities" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<!-- com.hyperionstorm.snapshot.guicomponents.SnapshotContentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="@color/transblack"
+    android:gravity="center"
+    android:src="@android:drawable/btn_star_big_off" 
+    android:padding="32dp" />
+    -->
+    
+<com.hyperionstorm.snapshot.guicomponents.TouchImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:src="@android:drawable/btn_star_big_off" 
+    android:padding="32dp" />

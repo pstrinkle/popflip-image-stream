@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnapshotGui" >
+
+        <com.hyperionstorm.snapshot.guicomponents.ToggledViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/pager"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		</com.hyperionstorm.snapshot.guicomponents.ToggledViewPager>
+
+        <!--  <TextView
+            android:id="@+id/postTimeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/postAuthorInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/postTimeInfo" />
+
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transblack"
+            android:onClick="favButtonToggle"
+            android:src="@android:drawable/btn_star_big_off" />
+
+        <TextView
+            android:id="@+id/positionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+        
+        <ToggleButton
+            android:id="@+id/watchToggleButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/black_button"
+            android:onClick="watchButtonToggle"
+            android:textColor="#FFFFFF"
+            android:textOff="Watch"
+            android:textOn="Unwatch" /> -->
+
+        <ProgressBar
+            android:id="@+id/mainProgressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>

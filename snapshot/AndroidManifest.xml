@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyperionstorm.snapshot"
+    android:versionCode="1"
+    android:versionName="0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Debug version only -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <supports-screens
+        android:smallScreens="true"
+    	android:normalScreens="true"
+    	android:largeScreens="true"
+    	android:anyDensity="true" />
+
+    <application
+        android:name="com.hyperionstorm.snapshot.Snapshot"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" >
+
+        <!-- <uses-library android:name="com.google.android.maps"/> -->
+        <activity
+            android:name="com.hyperionstorm.snapshot.SnapshotGui"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.NewPostActivity"
+            android:label="NewPost" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hyperionstorm.snapshot.SnapshotGui" />
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.UserInfoViewActivity"
+            android:label="@string/title_activity_user_info_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hyperionstorm.snapshot.SnapshotGui" />
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.EventViewActivity"
+            android:label="@string/title_activity_event_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hyperionstorm.snapshot.SnapshotGui" />
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.MaintainWatchListView"
+            android:label="@string/title_activity_maintain_watch_list_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hyperionstorm.snapshot.UserInfoViewActivity" />
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.CommunityViewActivity"
+            android:label="@string/title_activity_community_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hyperionstorm.snapshot.UserInfoViewActivity" />
+        </activity>
+        <activity
+            android:name="com.hyperionstorm.snapshot.PostInfoView"
+            android:label="@string/title_activity_post_info_view" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hyperionstorm.snapshot.SnapshotGui" />
+        </activity>
+
+        <service
+            android:name="com.hyperionstorm.snapshot.service.UploadService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.hyperionstorm.snapshot.ImageSliderActivity"
+            android:label="@string/title_activity_image_slider" >
+        </activity>
+    </application>
+
+</manifest>

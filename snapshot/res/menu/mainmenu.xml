@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/newMenuOption" android:titleCondensed="New" android:title="New Post" android:showAsAction="ifRoom" android:icon="@drawable/ic_action_new"></item><item android:id="@+id/replyMenuOption" android:titleCondensed="Reply" android:title="Reply to Post" android:showAsAction="ifRoom" android:icon="@drawable/ic_action_reply"></item><item android:id="@+id/homeMenuOption" android:enabled="true" android:titleCondensed="Home" android:title="Home" android:visible="false"></item>
+    <item android:id="@+id/publicMenuOption" android:enabled="true" android:titleCondensed="Public" android:title="Public Stream" android:visible="false"></item>
+    <item android:id="@+id/refreshMenuOption" android:enabled="true" android:titleCondensed="Refresh" android:title="Refresh" android:visible="true"></item>
+    <item android:id="@+id/userInfoMenuOption" android:titleCondensed="User Info" android:title="User Info" android:enabled="true" android:visible="true"></item>
+    <item android:id="@+id/eventLogMenuOption" android:enabled="true" android:titleCondensed="Event Log" android:title="(Debug) Event Log" android:visible="true"></item>@drawable/ic_launcher
+</menu>

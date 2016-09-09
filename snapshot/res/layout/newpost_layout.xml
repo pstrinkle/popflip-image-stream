@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/newPostOrReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="ReplyOrNewPost"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <com.hyperionstorm.snapshot.guicomponents.SnapshotContentView
+        android:id="@+id/newPostDataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newPostOrReply" />
+
+    <Button
+        android:id="@+id/button5"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/black_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="cancelPost"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/black_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button5"
+        android:onClick="submitPost"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/tagInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text"
+        android:text="tags" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/black_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="getFromFile"
+        android:text="Gallery" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/black_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button2"
+        android:onClick="getFromCamera"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/black_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cameraButton"
+        android:onClick="getRandomImage"
+        android:text="(dbg) r" />
+
+    <Button
+        android:id="@+id/communitySelectButton"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/black_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tagInput"
+        android:layout_alignParentLeft="true"
+        android:onClick="selectCommunity"
+        android:text="Select a community..." />
+
+</RelativeLayout>

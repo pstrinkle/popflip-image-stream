@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/pivotTag1Button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pivotTextLavel"
+        android:text="tag1"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/pivotTag2Button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pivotTextLavel"
+        android:layout_toRightOf="@+id/pivotTag1Button"
+        android:text="tag2"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/pivotTag3Button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pivotTag2Button"
+        android:layout_alignBottom="@+id/pivotTag2Button"
+        android:layout_toRightOf="@+id/pivotTag2Button"
+        android:text="tag3"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/pivotOnAuthorButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pivotTag1Button"
+        android:text="Author" />
+
+    <Button
+        android:id="@+id/pivotOnRepliesButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pivotOnAuthorButton"
+        android:layout_alignBottom="@+id/pivotOnAuthorButton"
+        android:layout_toRightOf="@+id/pivotOnAuthorButton"
+        android:text="Replies"
+        android:visibility="invisible" />
+
+</RelativeLayout>
