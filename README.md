@@ -7,9 +7,9 @@ of images.
 I'll try to update the documentation when I have time.
 
 ## Contributers
-Patrick Trinkle
-Jeffrey Liott
-James Smyth
+1. Patrick Trinkle
+2. Jeffrey Liott
+3. James Smyth
 
 ## License
 Apache 2.0
